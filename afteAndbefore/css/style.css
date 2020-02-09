@@ -1,0 +1,75 @@
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: inline-block;
+    width: 200px;
+    border: 1px solid black;
+    position: relative;
+    margin: 20px 100px;
+}
+
+.icon-container {
+    position: relative;
+    height: 100px;
+    top: 5px;
+}
+
+.card>.icon-container>span.icon {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #9818d6;
+    background-color: #9818d6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card>.icon-container>span.icon::before {
+    content: ' ';
+    width: 90px;
+    height: 90px;
+    border: 3px solid #ffa41b;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* visibility: hidden; */
+    /* display: none; */
+    transition: all 1.5s;
+}
+
+.card>.icon-container>span.icon>i {
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42pt;
+    color: aqua;
+}
+
+.card>.icon-container>span.icon>i:hover {
+    color: black;
+}
+.card>.icon-container>span.icon:hover::before {
+    /* visibility: visible; */
+    /* display: block; */
+    border-color: white;
+
+}
+
+.card>p {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
