@@ -1,0 +1,85 @@
+/* .card{         /Yanlis olan
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    position: relative;
+}
+.card::before{
+    content:' ';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid blueviolet;
+    position: absolute;
+    left: 25px;
+    transform: translateX(-50%);
+
+}
+.card::after{
+    content:' ';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid brown;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    transform: translate(-50%,-50%);
+    
+}
+.card:hover::before{
+    transform: translate(-50%,0);
+    bottom: 0;
+    /* transform: translateY(-50%); */
+/* }
+.card:hover::after{
+   
+    top: 0;
+    transform: translate(-100%,0);
+   
+} */ 
+.card{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    position: relative;
+  
+}
+.card::before{
+    content:' ';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid blueviolet;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.card::after{
+    content:' ';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid brown;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   
+    
+}
+ .card:hover::before{
+   top: auto;
+    bottom: 0;
+}
+    
+
+.card:hover::after{
+ 
+     top: 0;
+     bottom: auto; 
+   
+   
+}
